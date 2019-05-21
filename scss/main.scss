@@ -84,6 +84,13 @@ img {
         font-size: 4rem;
         line-height: 1.2;
       }
+
+      .txt-type {
+        color: $main-color;
+        .txt {
+          border-right: 0.2rem solid $light-color;
+        }
+      }
     }
   }
 
