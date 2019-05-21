@@ -1,12 +1,15 @@
 .items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  grid-gap: 0.4rem;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.3);
 }
 
 .item {
   position: relative;
   background: $main-color;
+  border: 1px solid $dark-color;
+  border-radius: 5px;
   overflow: hidden;
 
   &::after {

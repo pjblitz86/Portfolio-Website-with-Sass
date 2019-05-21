@@ -93,11 +93,14 @@ input[class^="btn-"]:hover {
 .items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3); }
+  grid-gap: 0.4rem;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.3); }
 
 .item {
   position: relative;
   background: #ffbc00;
+  border: 1px solid #333;
+  border-radius: 5px;
   overflow: hidden; }
   .item::after {
     content: "";
@@ -226,6 +229,7 @@ img {
     #header-home .header-content .txt-type {
       color: #ffbc00; }
       #header-home .header-content .txt-type .txt {
+        padding-right: 0.8rem;
         border-right: 0.2rem solid #f4f4f4; }
 
 #header-inner {
@@ -363,6 +367,28 @@ img {
     height: 50px;
     border-radius: 50%;
     margin-right: 0.5rem; }
+
+#contact-a .text-fields {
+  display: grid;
+  grid-template-areas: "name email" "subject phone" "message message";
+  grid-gap: 1.2rem;
+  margin-bottom: 1.2rem; }
+  #contact-a .text-fields .name-input {
+    grid-area: name; }
+  #contact-a .text-fields .subject-input {
+    grid-area: subject; }
+  #contact-a .text-fields .email-input {
+    grid-area: email; }
+  #contact-a .text-fields .phone-input {
+    grid-area: phone; }
+  #contact-a .text-fields .message-input {
+    grid-area: message;
+    height: 100; }
+  #contact-a .text-fields .text-input {
+    padding: 0.5rem 1rem; }
+
+#contact-a button[type="submit"] {
+  width: 50%; }
 
 #main-footer {
   background: #333;
