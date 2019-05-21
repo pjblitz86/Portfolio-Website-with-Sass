@@ -193,6 +193,7 @@ img {
 
 // ABOUT SECTIONS
 #about {
+  // about a
   &-a {
     .about-info {
       display: grid;
@@ -227,6 +228,23 @@ img {
     .award-3 .fas {
       color: $main-color;
       margin: 1rem;
+    }
+  }
+  // about b
+  &-b {
+    .progress {
+      overflow: hidden;
+      height: 20px;
+      background: $medium-color;
+      border-radius: 5px;
+      margin-bottom: 0.6rem;
+
+      div {
+        height: 100%;
+        color: #fff;
+        text-align: center;
+        background: $main-color;
+      }
     }
   }
 }
